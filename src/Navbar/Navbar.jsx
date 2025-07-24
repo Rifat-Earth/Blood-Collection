@@ -43,6 +43,7 @@ const Navbar = () => {
                         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                     >
                         <li><Link to="/">Home</Link></li>
+                        <li><Link to="/addBlood">Add Donors Info</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                         <div className="divider my-1" />
@@ -62,6 +63,7 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center gap-4">
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to="/" className="hover:text-red-500">Home</Link></li>
+                    <li><Link to="/addBlood">Add Donors Info</Link></li>
                     <li><Link to="/about" className="hover:text-red-500">About</Link></li>
                     <li><Link to="/contact" className="hover:text-red-500">Contact</Link></li>
                 </ul>
