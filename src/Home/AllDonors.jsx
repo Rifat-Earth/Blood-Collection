@@ -4,7 +4,7 @@ const AllDonors = () => {
     const [donations, setDonations] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/donations")
+        fetch("https://blood-collection-server.vercel.app/donations")
             .then((res) => res.json())
             .then((data) => setDonations(data))
             .catch((error) => console.error("Error fetching donations:", error));
