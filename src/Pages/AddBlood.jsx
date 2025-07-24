@@ -6,7 +6,7 @@ const AddBlood = () => {
 
   const onSubmit = async (data) => {
   try {
-    const res = await fetch('https://blood-collection-server.vercel.app/add-blood', {
+    const res = await fetch('http://localhost:5000/add-blood', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

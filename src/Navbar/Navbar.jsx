@@ -79,7 +79,7 @@ const Navbar = () => {
                                     src={user.photoURL}
                                     alt="Profile"
                                     title={user.name || "My Profile"}
-                                    className="rounded-full w-8 h-8 object-cover border border-gray-300"
+                                    className="rounded-full w-8 h-8 object-cover border border-gray-300  "
                                 />
                             ) : (
                                 <CgProfile size={24} />

@@ -7,6 +7,7 @@ import Error from "../Error/Error";
 import ContactUs from "../Pages/ContactUs";
 import About from "../Pages/About";
 import AddBlood from "../Pages/AddBlood";
+import PrivateRouter from "./PrivateRouter";
 
 export const router = createBrowserRouter([
   {
@@ -36,7 +37,9 @@ export const router = createBrowserRouter([
        },
        {
         path: '/addBlood',
-        Component: AddBlood
+        element: <PrivateRouter>
+          <AddBlood></AddBlood>
+        </PrivateRouter>
        }
     ],
   },
